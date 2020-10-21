@@ -1,6 +1,8 @@
 # Simple Pipeline Concept 
 _Almost a single pipeline, but I just couldn't let go of configuration_
 
+It also shows how to use Kedro as a library, with library components. 
+
 ## What is this thing? 
 When you work with a more complex workflow in Kedro you have to interact with the following files:
 - `catalog.yaml` for your data sources in configuration 
