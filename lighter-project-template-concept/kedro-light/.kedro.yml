@@ -1,0 +1,6 @@
+context_path: kedro_light.run.ProjectContext
+project_name: "Kedro Light"
+project_version: "0.16.5"
+package_name: "kedro_light"
+hooks:
+  - kedro_light.hooks.project_hooks
