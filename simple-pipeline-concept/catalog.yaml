@@ -1,0 +1,9 @@
+# Input Dataset
+titanic_training_data:
+  type: pandas.CSVDataSet
+  filepath: train.csv
+
+# Chart Output
+survival_breakdown_chart:
+  type: matplotlib.MatplotlibWriter
+  filepath: survival_breakdown.png
