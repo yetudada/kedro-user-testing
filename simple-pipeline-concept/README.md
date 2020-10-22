@@ -1,25 +1,26 @@
 # Simple Pipeline Concept 
-_Almost a single pipeline, but I just couldn't let go of configuration_
-
-It also shows how to use Kedro as a library, with library components. 
 
 ## What is this thing? 
-When you work with a more complex workflow in Kedro you have to interact with the following files:
+When you work with any workflow in Kedro you have to interact with the following files:
 - `catalog.yaml` for your data sources in configuration 
 - `nodes.py` for your Python functions
-- `pipline.py` for your pipeline
-- `hooks.py` to register your pipeline so that it appears on the CLI (not used)
-- `parameters.yaml` for your parameters in configuration (not used)
+- `pipline.py` to build your pipeline using `nodes.py`
+- `hooks.py` to register your pipeline so that it appears on the CLI
+- `parameters.yaml` for your parameters in configuration (not used in this example)
 
-This design proposes introducing users to a two file workflow: 
+An insight from the user research has shown that this workflow is overwhelming for users that are used to a one-file
+ interaction with a Jupyter notebook. This design proposes
+ introducing users to a
+ two-file workflow: 
 - `catalog.yaml` for data source configuration
 - A single `pipeline.py` file that merges the `pipeline.py` and `nodes.py` file into one thing
 
-It dodges the KedroContext and just uses the library components of Kedro, but like this, you cannot access the CLI to run or visualise this pipeline. 
+>_Note:_ The simple pipeline concept uses Kedro as a library but this restricts access to the Kedro CLI.
 
-## Goals of this design
-- Teach users that they don't have to use the whole framework if they don't want to
-- Show them how to use Kedro as a libary
+## Setup
+- Create a Python virtual environment with Python 3.7 and activate it
+- Run `pip install "kedro[pandas.CSVDataSet]" && pip install matplotlib"`
+- Use the terminal to run `pipeline.py` by typing `python pipeline.py`
 
 ## Prototype
 
@@ -91,12 +92,9 @@ survival_breakdown_chart:
   type: matplotlib.MatplotlibWriter
   filepath: survival_breakdown.png
 ```
+The output of `pipeline.py` creates the following image: 
 
-## Usage instructions
-- Create a Python virtual environment with Python 3.7 and activate it
-- Run `pip install "kedro[pandas.CSVDataSet]" && pip install matplotlib"`
-- Use the terminal to run `pipeline.py` by typing `python pipeline.py`
-
+![Survival Breakdown](survival_breakdown.png)
 
 ## Credits
 I used part of [Tam Nguyen's](https://github.com/tamsanh/kedro-introduction-tutorial) introductory tutorial to make this. And he credits:

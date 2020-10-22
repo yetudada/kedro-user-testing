@@ -11,7 +11,7 @@ conf_catalog = conf_loader.get("catalog*")
 # Create the Data Catalog from the catalog.yml file
 io = DataCatalog.from_config(conf_catalog)
 df = io.load("titanic_training_data")
-print(df.head())
+
 
 # Create nodes by writing Python functions
 # Remove NaN values
