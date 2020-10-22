@@ -4,12 +4,14 @@ from kedro.io import DataCatalog
 from kedro.pipeline import Pipeline, node
 from kedro.runner import SequentialRunner
 
+# Find the configuration (catalog.yaml) in the current working directory and load it
 conf_loader = ConfigLoader(".")
-conf_catalog = conf_loader.get("catalog*", "catalog*/**")
+conf_catalog = conf_loader.get("catalog*")
 
-# Create the Data Catalog
+# Create the Data Catalog from the catalog.yml file
 io = DataCatalog.from_config(conf_catalog)
-
+df = io.load("titanic_training_data")
+print(df.head())
 
 # Create nodes by writing Python functions
 # Remove NaN values
