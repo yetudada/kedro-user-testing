@@ -1,1 +1,0 @@
-# A Lighter Project Template

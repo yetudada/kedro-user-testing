@@ -18,8 +18,10 @@ An insight from the user research has shown that this workflow is overwhelming f
 >_Note:_ The simple pipeline concept uses Kedro as a library but this restricts access to the Kedro CLI.
 
 ## Assumption of the prototype
-This prototype tests value, it's based on the assumption that if we can reduce the number of files that users
+This prototype tests value, it's based on the assumption that if we reduce the number of files that users
  interact with as they are first learning about Kedro, then they will have an easier Kedro learning journey. 
+ 
+ However, it will come at the cost of dropping Python best practices. 
 
 ## Setup
 - Create a Python virtual environment with Python 3.7 and activate it
