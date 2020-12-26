@@ -8,6 +8,16 @@ Usage:
   kedro [OPTIONS] [NOUN] [VERB]
 ```
 
+## What are the biggest changes for the CLI? 
+- The user experience of `kedro new` and `kedro starter` are merged
+- The entry of a single project name instead of:
+  - Project name
+  - Repository name
+  - Python package name
+- Introduction of a `kedro project` group
+- Ease of viewing improvements, you will see a lot of groups
+- New commands including `kedro catalog delete`
+
 ## The Global CLI 
 We can see a redesigned CLI that appears when you run `kedro`. It has space for where you can find documentation, get help and share feedback. 
 
@@ -399,6 +409,7 @@ Options:
 
 Commands:
   create  Create Data Catalog YAML configuration with missing datasets.
+  delete  Delete datasets that are not used in any pipeline.
   list    Show datasets per type.
 ```
 
