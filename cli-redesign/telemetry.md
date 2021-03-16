@@ -33,7 +33,7 @@ not store information contained in Kedro projects. You can find out more by
 reading our privacy policy at: 
 https://github.com/quantumblacklabs/kedro/blob/master/PRIVACY_POLICY.md
 
-Would you like to opt-out of anonymous usage stats collection? [yN] 
+Anonymous tracking is enabled by default. Would you like to turn it off? [yN]
 ```
 
 ```
