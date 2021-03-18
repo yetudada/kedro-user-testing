@@ -31,9 +31,11 @@ Usage Statistics:
 As an open source project, we collect usage statistics. We cannot see and do
 not store information contained in Kedro projects. You can find out more by
 reading our privacy policy at: 
-https://github.com/quantumblacklabs/kedro/blob/master/PRIVACY_POLICY.md
+https://github.com/quantumblacklabs/kedro/blob/master/PRIVACY_POLICY.md 
+And you can look at the source code of our telemetry plugin: 
+https://github.com/quantumblacklabs/kedro-telemetry
 
-Anonymous tracking is enabled by default. Would you like to turn it off? [yN]
+Would you like to share usage statistics with the Kedro team to improve Kedro? [yN]
 ```
 
 ```
