@@ -67,7 +67,7 @@ Global commands from Kedro
 Commands:
   docs     See the Kedro tutorials and API docs.
   info     Get more information about Kedro.
-  starter  Create a new project or find examples.
+  new      Create a new project or find examples.
 
 Global commands from Kedro-Viz
 Commands:
@@ -191,6 +191,47 @@ Commands:
 
 #### Future view
 
+##### Prototype 1
+```bash
+(my-virtual-environment) ➜  ~ kedro new
+
+Project Template:
+=============
+Choose a project template for your new project. 
+- blank: A minimal project template
+- mini-kedro: A minimum setup to use Kedro's DataCatalog
+- pandas-iris: An Iris dataset example using Pandas
+- pyspark: Configuration and inistialisation for a PySpark pipeline
+- pyspark-iris: An Iris dataset example using PySpark 
+- spaceflights: Spaceflights tutorial example code
+ [Select your template]: blank
+
+Project Name:
+=============
+Please enter a human readable name for your new project.
+Spaces and punctuation are allowed.
+ [New Kedro Project]: Example Project
+
+Repository Name:
+================
+Please enter a directory name for your new project repository.
+Alphanumeric characters, hyphens and underscores are allowed.
+Lowercase is recommended.
+ [example-project]: 
+
+Python Package Name:
+====================
+Please enter a valid Python package name for your project package.
+Alphanumeric characters and underscores are allowed.
+Lowercase is recommended. Package name must start with a letter or underscore.
+ [example_project]: 
+
+Change directory to the project generated in /Users/yetunde_dada/example-project
+
+A best-practice setup includes initialising git and creating a virtual environment before running `kedro install` to install project-specific dependencies. Refer to the Kedro documentation: https://kedro.readthedocs.io/
+```
+
+##### Prototype 2
 ```bash
 (my-virtual-environment) ➜  ~ kedro starter
 Usage: kedro starter [OPTIONS] COMMAND [ARGS]...
