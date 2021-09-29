@@ -192,6 +192,10 @@ Commands:
 #### Future view
 
 ##### Prototype 1
+
+- Removes `kedro starter` command
+- Gives users a template choice as an additional question
+
 ```bash
 (my-virtual-environment) ➜  ~ kedro new
 
@@ -232,6 +236,10 @@ A best-practice setup includes initialising git and creating a virtual environme
 ```
 
 ##### Prototype 2
+
+- Removes `kedro new`
+- Makes users run `kedro starter pull "<template_name>"` to access a template
+
 ```bash
 (my-virtual-environment) ➜  ~ kedro starter
 Usage: kedro starter [OPTIONS] COMMAND [ARGS]...
