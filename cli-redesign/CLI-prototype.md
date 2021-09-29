@@ -53,6 +53,12 @@ Commands:
 ```
 
 #### Future view
+
+- Adds more detail about Kedro and removes all the technical lingo they don't need
+- Adds in community links
+- Removes the `starter` command 
+- Improves `viz` command, `kedroviz` -> `Kedro-Viz`
+
 ```bash
 (my-virtual-environment) ➜  ~ kedro
 Usage: kedro [OPTIONS] COMMAND [ARGS]...
@@ -60,8 +66,8 @@ Usage: kedro [OPTIONS] COMMAND [ARGS]...
   A Python framework for reproducible, maintainable and modular data science code.
 
   Read the documentation - https://kedro.readthedocs.io/en/stable/
-  Ask questions on Discourse - https://discourse.kedro.community/
-  Provide feedback about Kedro - https://feedback.quantumblack.com/kedro
+  Ask questions on Discord - https://discord.gg/2QvVEdVEea
+  Join the forum on GitHub - https://github.com/quantumblacklabs/kedro/discussions
 
 Global commands from Kedro
 Commands:
@@ -88,6 +94,8 @@ Opening file:///Users/yetunde_dada/opt/anaconda3/envs/my-virtual-environment/lib
 ```
 
 #### Future view
+- Just adds a line space
+
 ```bash
 (my-virtual-environment) ➜  ~ kedro docs
 
